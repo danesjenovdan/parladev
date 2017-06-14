@@ -1,0 +1,74 @@
+.logocontainer {
+    margin: auto;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    max-width: 290px;
+}
+.logo {
+    display: block;
+    float: left;
+}
+.logop {
+    float: left;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    max-width: 160px;
+    margin-left: 20px;
+}
+
+body {
+    color: #505050;
+}
+
+.intro {
+    text-align: center;
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box {
+    border: 1px solid #dbdbdb;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 40px;
+}
+
+.box h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size:  22px;
+}
+
+.box a {
+    text-transform: uppercase;
+    color: #009cdd;
+    font-weight: bold;
+}
+.box a:hover {
+    text-decoration: none;
+    background-color: #d9e7ed;
+}
+
+.name {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 16px;
+}
+.url {
+    text-align: center;
+}
+
+.img-responsive {
+    margin: auto;
+}

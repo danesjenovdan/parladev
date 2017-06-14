@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Parlameter for developers
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,500&subset=latin,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='https://cdn.parlameter.si/v1/parlassets/icons/favicon.ico' />
+
+    <meta name="twitter:creator" content="@danesjenovdan">
+    <meta name="twitter:description" content="Parlameter je orodje, ki z analizo glasovanj in transkriptov nastopov lajša spremljanje dela v Državnem zboru.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Parlameter for developers">
+    <meta name="twitter:image" content="img/database.png">
+
+    <meta property="og:description" content="Parlameter je orodje, ki z analizo glasovanj in transkriptov nastopov lajša spremljanje dela v Državnem zboru.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Parlameter for developers">
+    <meta property="og:image" content="img/database.png">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.parlameter.si/v1/parlassets/scss/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["setDomains", ["*.parlameter.si"]]);
+        _paq.push(["disableCookies"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        _paq.push(['enableHeartBeatTimer']);
+        (function () {
+            var u = "//zy.si/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', '13']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript>
+        <p><img src="//zy.si/piwik.php?idsite=13" style="border:0;" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Code -->
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+    <header class="header">
+        <div class="stripeeltop"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logocontainer">
+                        <a class="logo" href="/">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282.82 170.08">
+                                <title>Asset 1</title>
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <g id="_Group_" data-name="&lt;Group&gt;">
+                                            <path id="_Path_" data-name="&lt;Path&gt;" class="cls-1" d="M79.9,60.19l-.35,5.51A32.17,32.17,0,0,1,56.69,94.49,32.17,32.17,0,0,1,33.84,65.71l-.35-5.51H0v49.69H132.28V60.19Z"
+                                            />
+                                            <path id="_Path_2" data-name="&lt;Path&gt;" class="cls-2" d="M0,0V49.69H32.83L32,37.13q.86-.41,1.73-.8h0a56.83,56.83,0,0,1,45.86,0h0q.87.39,1.73.8l-.79,12.57H207.87V0Z"
+                                            />
+                                            <g id="_Group_2" data-name="&lt;Group&gt;">
+                                                <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" class="cls-3" d="M12.46,149.56H6.57v20.52H.37v-49.7H12.46c6.34,0,10,3.36,10,10.22v8.81C22.46,146.2,18.81,149.56,12.46,149.56Zm3.73-19.25c0-2.84-1-4.33-3.66-4.33h-6v18.21h6c2.61,0,3.66-1.64,3.66-4.4Z"
+                                                />
+                                                <path id="_Compound_Path_2" data-name="&lt;Compound Path&gt;" class="cls-3" d="M43.73,170.08l-2-11.42H32.91l-2.09,11.42h-5.9l9.33-49.7h6.57l9.25,49.7Zm-6.34-38.21-3.51,21.27h6.87Z"
+                                                />
+                                                <path id="_Compound_Path_3" data-name="&lt;Compound Path&gt;" class="cls-3" d="M65.67,149.11H62.24v21H56v-49.7H68.13c6.34,0,9.93,3.21,9.93,10.07V139c0,4.33-1.87,7.91-6,9.25,0-.07,6.72,21.87,6.72,21.87H72.09Zm1.79-5.37c2.84,0,4.4-1.64,4.4-4.78v-8.81c0-2.54-1-4.18-3.73-4.18h-5.9v17.76Z"
+                                                />
+                                                <path id="_Compound_Path_4" data-name="&lt;Compound Path&gt;" class="cls-3" d="M85.52,170.08v-49.7h6.19v44h12.91v5.75Z" />
+                                                <path id="_Compound_Path_5" data-name="&lt;Compound Path&gt;" class="cls-3" d="M127.38,170.08l-2-11.42h-8.81l-2.09,11.42h-5.9l9.33-49.7h6.57l9.25,49.7ZM121,131.87l-3.51,21.27h6.87Z"
+                                                />
+                                                <path id="_Compound_Path_6" data-name="&lt;Compound Path&gt;" class="cls-3" d="M165.74,170.08V131.94l-1.64,9-5.67,29.1h-6L146.78,141l-1.64-9v38.13h-5.52v-49.7h8.81l5.6,30.9,1.64,9,1.57-9.1,5.52-30.82h8.66v49.7Z"
+                                                />
+                                                <path id="_Compound_Path_7" data-name="&lt;Compound Path&gt;" class="cls-3" d="M180.14,170.08v-49.7h19.48V126H186.34V141.5H196v5.45h-9.63v17.46h13.28v5.67Z"
+                                                />
+                                                <path id="_Compound_Path_8" data-name="&lt;Compound Path&gt;" class="cls-3" d="M218.95,126.12v44h-6.19v-44h-8.43v-5.75h22.91v5.75Z"
+                                                />
+                                                <path id="_Compound_Path_9" data-name="&lt;Compound Path&gt;" class="cls-3" d="M233.42,170.08v-49.7H252.9V126H239.62V141.5h9.63v5.45h-9.63v17.46H252.9v5.67Z"
+                                                />
+                                                <path id="_Compound_Path_10" data-name="&lt;Compound Path&gt;" class="cls-3" d="M269.77,149.11h-3.43v21h-6.19v-49.7h12.09c6.34,0,9.93,3.21,9.93,10.07V139c0,4.33-1.87,7.91-6,9.25,0-.07,6.72,21.87,6.72,21.87h-6.64Zm1.79-5.37c2.84,0,4.4-1.64,4.4-4.78v-8.81c0-2.54-1-4.18-3.73-4.18h-5.9v17.76Z"
+                                                />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <p class="logop">Parlameter for developers</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="intro">Parlameter is a tool that aids political researchers and journalist in doing their job. It consists of several
+                    building blocks providing APIs for datasets gathered from the website of the Slovenian parliament as
+                    well as visualisations of those datasets in an embeddable card format (like a Youtube video). The APIs
+                    are documented below, as well as links to Github with all the source code.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="img/database.png">
+                        </div>
+                        <div class="col-md-9">
+                            <h1>Parladata API</h1>
+                            <p>The Parladata API serves data as scraped from www.dz-rs.si. It creates a faithful copy, so mistakes
+                                in the original dataset will be present in Parladata. There might be mistakes in the parsed
+                                data. If you find any mistakes, please submit an issue. The most common mistake is wrongly
+                                assigning a speech to a person with a similar/same name. The API is divided into three main
+                                endpoints, p, pg, and s for MPs, parties (parliamentary groups), and sessions respectively.</p>
+                            <p><a href="https://dev.parlameter.si/documentation/parladata">Start using it</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="row">
+                        <div class="col-md-3 visible-xs">
+                            <img class="img-responsive" src="img/database.png">
+                        </div>
+                        <div class="col-md-9">
+                            <h1>Parlalize API</h1>
+                            <p>The Parlalize API serves calculated and organized data and metrics. The calculations are performed
+                                on data accessible at the Parladata API endpoint. Most of the metrics are calculated every
+                                24 hours or less with a few notable exceptions. If you want to access the data as it was
+                                calculated on a given day, append the date (localized to slovenian) behind the last slash
+                                in your query. The API is organized like Parladata but enforces grouping for endpoint URLs.
+                                /p for MPs, /pg for parliamentary groups, and /s for sessions.</p>
+                            <p><a href="https://dev.parlameter.si/documentation/parladata">Start using it</a></p>
+                        </div>
+                        <div class="col-md-3 hidden-xs">
+                            <img class="img-responsive" src="img/database.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="img/database.png">
+                        </div>
+                        <div class="col-md-9">
+                            <h1>Parlasearch API</h1>
+                            <p>The Parlasearch API serves as a de facto middleware between our SOLR instance and the outside
+                                world. It simplifies queries to make them more human friendly and serves as a "security"
+                                layer preventing strange queries that might impact the performance of our search engine.
+                                It also contains functions that calculate certain analyses that perform better when utilising
+                                SOLR. These results are then POSTed to Parlalize and served from there.</p>
+                            <p><a href="https://dev.parlameter.si/documentation/parladata">Start using it</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="intro">Lorem ipsum</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                    <img class="img-responsive" src="img/database.png">
+                    <p class="name">parladata</p>
+                    <p class="url"><a href="https://github.com">github</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <img class="img-responsive" src="img/database.png">
+                    <p class="name">parlalize</p>
+                    <p class="url"><a href="https://github.com">github</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <img class="img-responsive" src="img/database.png">
+                    <p class="name">parlasearch</p>
+                    <p class="url"><a href="https://github.com">github</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                    <img class="img-responsive" src="img/database.png">
+                    <p class="name">parlanode</p>
+                    <p class="url"><a href="https://github.com">github</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <img class="img-responsive" src="img/database.png">
+                    <p class="name">parlacards</p>
+                    <p class="url"><a href="https://github.com">github</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <img class="img-responsive" src="img/database.png">
+                    <p class="name">parlassets</p>
+                    <p class="url"><a href="https://github.com">github</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row border_top">
+            </div>
+        </div>
+        <div class="stripeelbottom"></div>
+    </footer>
+    <script src="/js/js.js"></script>
+
+
+</body>
+
+</html>
