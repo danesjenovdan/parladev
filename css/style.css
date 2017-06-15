@@ -3,19 +3,27 @@
     position: relative;
     display: block;
     overflow: hidden;
-    max-width: 290px;
+    max-width: 270px;
 }
 .logo {
     display: block;
     float: left;
+    width: auto !important;
 }
 .logop {
     float: left;
     display: block;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
-    max-width: 160px;
+    max-width: 140px;
     margin-left: 20px;
+    padding-top: 2px;
+}
+.header .container, .line {
+    border-bottom: 1px solid #dbdbdb;
+}
+.line  {
+    margin-top: 60px;
 }
 
 body {
@@ -26,6 +34,7 @@ body {
     text-align: center;
     max-width: 700px;
     position: relative;
+    display: block;
     margin: auto;
     font-size: 16px;
     font-weight: 400;
@@ -101,6 +110,33 @@ body {
     bottom: 4px;
     left: 4px;
     background-image: url(../img/github.png);
+}
+
+footer.footer {
+    height: auto;
+}
+.footerlink {
+    display: block;
+    color: #505050;
+    padding-bottom: 20px;
+}
+.footerlink:hover {
+    text-decoration: none;
+    /*background-color: #d9e7ed;*/
+}
+.footerlink img, p {
+    display: inline-block;
+}
+.footerlink p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footerlogo {
+    max-width: 40px;
+}
+
+.border_top {
+    padding-top: 20px !important;
 }
 
 @media (min-width: 992px) {
