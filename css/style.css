@@ -21,6 +21,7 @@
 }
 .header .container, .line {
     border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 20px;
 }
 .line  {
     margin-top: 60px;
@@ -39,6 +40,8 @@ body {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Roboto Slab', serif;
+
+    line-height: 1.8em;
 
     margin-top: 40px;
     margin-bottom: 40px;
@@ -59,8 +62,7 @@ body {
 
 .box a {
     text-transform: uppercase;
-    color: #009cdd;
-    font-weight: bold;
+    font-weight: 500;
 }
 .box a:hover {
     text-decoration: none;
@@ -139,8 +141,24 @@ footer.footer {
     padding-top: 20px !important;
 }
 
+.desc {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.desc a {
+    text-transform: none;
+}
+
 @media (min-width: 992px) {
     .row > .img-wrapper {
         padding-top: 55px;
     }
+}
+
+iframe {
+    position: relative;
+    margin: auto;
+    display: block;
 }
